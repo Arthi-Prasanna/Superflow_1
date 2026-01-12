@@ -66,7 +66,7 @@ module.exports = withSentryConfig(
   module.exports,
   {
     silent: true,
-    dryrun: true,
+    dryRun: true,
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
