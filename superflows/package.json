@@ -5,7 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install",
+    "prepare": "test -d .git && husky install || exit 0",
     "test": "jest --watch --runInBand --changedSince=@{push} || jest --watch --runInBand --changedSince=origin/main",
     "testprepush": "jest --runInBand --passWithNoTests --changedSince=@{push} -- --watchAll=false --bail --ci --silent || jest --runInBand --changedSince=origin/main --passWithNoTests -- --watchAll=false --bail --ci --silent"
   },
