@@ -65,6 +65,8 @@ const { withSentryConfig } = require("@sentry/nextjs");
 module.exports = withSentryConfig(
   module.exports,
   {
+    silent: true,
+    dryrun: true,
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
